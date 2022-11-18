@@ -6,7 +6,7 @@ _I want to learn some assembly language!!_
 
 [Link1](https://www.youtube.com/playlist?list=PLw8GoOBtqbUG_Md0qpfLGrNYPb4E-BMKb)
 
-[Link2](https://www.youtube.com/playlist?list=PLetF-YjXm-sCH6FrTz4AQhfH6INDQvQSn)
+[Link2](https://www.youtube.com/playlist?list=PLetF-YjXm-sCH6FrTz4AQhfH6INDQvQSn)   [ This is the link that I will use first ]
 
 [Link3](https://www.youtube.com/playlist?list=PLan2CeTAw3pFOq5qc9urw8w7R-kvAT8Yb)
 
