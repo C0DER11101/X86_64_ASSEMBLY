@@ -64,7 +64,9 @@ The `$` before the arguments means it stores the memory address to the data that
 This system call prints data as output, takes data as input.
 
 0 -> means standard input.
+
 1 -> means standard output.
+
 2 -> means standard error.
 
 This image shows the components of **sys_write** and what arguments it takes. The value of register `rax` is 1.
@@ -75,6 +77,14 @@ This image shows the components of **sys_write** and what arguments it takes. Th
 This image below shows how arguments are passed into **sys_write**
 
 <img src="https://github.com/C0DER11101/X86_64_ASSEMBLY/blob/X86_64_Linux/sys_write_AGain.png" width="60%" height="30%">
+
+When we write:
+
+```asm
+
+mov rax, 1
+```
+it simply means that we are moving the value `1` to the register `rax`. `mov` means to move around a value.
 
 ### sys_exit
 
