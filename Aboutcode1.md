@@ -3,7 +3,7 @@
 **This program has taught me two things.**
 
 
-1. The `.bss` section should be between the `.data` and `.text` sections, otherwise while compiling the code warnings will thrown and your code will not run as desired.
+1. The `.bss` section should be between the `.data` and `.text` sections, otherwise while compiling the code warnings will be thrown and your code will not run as desired.
 2. There one more way of compiling you code, it's shown in the image below:
 
 <img src="https://github.com/C0DER11101/X86_64_ASSEMBLY/blob/X86_64_Linux/CodeInAssembly.png" width="60%" height="30%">
