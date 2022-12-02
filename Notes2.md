@@ -77,3 +77,36 @@ then you will get an error like this:
 
 
 So, avoid this.
+
+
+# The stack
+
+> The stack, like registers, is another way to temporarily store data.
+
+### Terminology
+
+1. When you add data onto the top of the stack, you **push** data onto the stack.
+2. When you remove data from the top of the stack, you **pop** data from the stack.
+3. If you look at the top of the stack without removing or adding anything to it, this is called **peeking**.
+
+## Stack operations
+
+`reg` here means _register_.
+
+|Operations|Effect|
+|:--------:|:----:|
+|push `reg`/value|pushes a value onto the stack.|
+|pop `reg`|pops a value off the stack and stores in `reg`.|
+|mov `reg`, `[rsp]`|stores the peek value in reg.|
+
+Here `rsp` is a pointer to the top of the stack, so to access the value pointed to by it we enclose it within square brackets like this: `[rsp]`
+
+<img src="https://github.com/C0DER11101/X86_64_ASSEMBLY/blob/X86_64_Linux/ImportantNote.png" width="60%" height="30%">
+
+
+Below an image that shows the assembly code performing some push and pop operations on a stack:
+
+<img src="https://github.com/C0DER11101/X86_64_ASSEMBLY/blob/X86_64_Linux/stackWithAsm.png" width="60%" height="30%">
+
+
+---
