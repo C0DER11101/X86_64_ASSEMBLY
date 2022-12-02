@@ -61,7 +61,7 @@ Recall from [overviewCode.md](https://github.com/C0DER11101/X86_64_ASSEMBLY/blob
 
 `mov [digit], al` basically moves the last 8-bits of the `rax` register to the memory address of `digit`, here we are not accessing the memory adress indirectly by the name `digit`, but instead we are directly accessing the memory address of `digit` by using the pointer `[digit]` which points to the memory address of `digit`.
 
-`digit` is actuall defined with 2 bytes, 0 and 10. But since we are loading only the lower byte of `rax` register into `digit`, it only overwrites the first byte(i.e 0) and doesnot affect the newline character.
+`digit` is actually defined with 2 bytes, 0 and 10. But since we are loading only the lower byte of `rax` register into `digit`, it only overwrites the first byte(i.e 0) and doesnot affect the newline character.
 
 So, the output of this code is 0.
 
