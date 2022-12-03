@@ -48,7 +48,7 @@ Each position is a power of the base which, in this case, is 2(since binary).
 |1|1|$1\times 2^1=2$|
 |1|2|$1\times 2^2=4$|
 |1|3|$1\times 2^3=8$|
-|1|4|$1\times$ 2^4=16|
+|1|4|$1\times 2^4=16$|
 |1|5|$1\times 2^5=32$|
 |1|6|$1\times 2^6=64$|
 |1|7|$1\times 2^7=128$|
