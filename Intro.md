@@ -19,16 +19,16 @@ Main internal hardware of a PC consists of processors, memory and registers.
 **Fundamental unit of computer storage is a bit: it could be ON(1) or OFF(0).**
 
 
-$1 Byte = 8 bits$
+1 Byte = 8 bits
 
 The processor supports the following data sizes:
 
-$Word : a 2-byte data item.$
-$Doubleword : a 4-byte data item.$
-$Quadword : an 8-byte data item.$
-$Paragraph : a 16-byte area.$
-$Kilobyte : 1024 bytes.$
-$Megabyte : 1048576 bytes$
+Word : a 2-byte data item.
+Doubleword : a 4-byte data item.
+Quadword : an 8-byte data item.
+Paragraph : a 16-byte area.
+Kilobyte : 1024 bytes.
+Megabyte : 1048576 bytes.
 
 
 ## Binary Number System
