@@ -109,4 +109,7 @@ Below an image that shows the assembly code performing some push and pop operati
 <img src="https://github.com/C0DER11101/X86_64_ASSEMBLY/blob/X86_64_Linux/stackWithAsm.png" width="60%" height="30%">
 
 
+**Just in case, you need to look up to pointers in X86, just click [this](https://stackoverflow.com/questions/48608423/what-do-square-brackets-mean-in-x86-assembly) link!!**
+
+
 ---
