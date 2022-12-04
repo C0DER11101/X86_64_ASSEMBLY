@@ -211,4 +211,4 @@ _When the processor gets numeric data from memory to register, it again reverses
 **There are two kinds of memory addresses:**
 
 1. Absolute address $\rightarrow$ direct reference of specific location.
-2. Segment address(or offset) $rightarrow$ starting address of a memory segment with the offset value.
+2. Segment address(or offset) $\rightarrow$ starting address of a memory segment with the offset value.
