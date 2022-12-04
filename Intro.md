@@ -97,5 +97,118 @@ D -> 13 -> 1101
 
 So the binary equivalent is:  1111 1010 1101 1000
 
-
 # Binary arithmetic
+
+| **(i)** | **(ii)** | **(iii)** | **(iv)** |
+| :-----: | :------: | :-------: | :------: |
+|         |          |           |    1     |
+|    0    |    1     |     1     |    1     |
+|   +0    |    +0    |    +1     |    +1    |
+|   =0    |    =1    |    =10    |   =11    |
+
+Rules _(iii)_ and _(iv)_ show a carry of a 1-bit into the next left position.
+
+
+
+**Example:**
+
+
+
+| Decimal |  Binary   |
+| :-----: | :-------: |
+|   60    | 00111100  |
+|   +42   | 00101010  |
+|  =102   | =01100110 |
+
+
+
+**A negative number is expressed in two's complement notation.**
+
+
+
+_Rule for converting a binary number to its two's complement._
+
+
+
+**In the original binary number, replace all the 1s with 0s and all the 0s with 1s(this is called _reversing the binary number_) and then add 1 to this newly formed binary number.**
+
+
+
+**Example:**
+
+|               Decimal                |  Binary  |
+| :----------------------------------: | :------: |
+|              Number 53               | 00110101 |
+|           Reverse the bits           | 11001010 |
+| Add 1 to this reversed binary number | 00000001 |
+|              Number -53              | 11001011 |
+
+
+
+**To subtract one value from another, convert the number being subtracted to two's complement format and add the numbers.**
+
+
+
+**Example:**
+
+Subtract 42 from 53.
+
+
+
+|               Decimal               |  Binary  |
+| :---------------------------------: | :------: |
+|              Number 53              | 00110101 |
+|              Number 42              | 00101010 |
+|       Reverse the bits of 42        | 11010101 |
+| Add 1 to the reversed binary number | 00000001 |
+|             Number -42              | 11010110 |
+|              53+(-42)               | 00001011 |
+
+**The overflow of the last 1-bit(which was the carry) is lost.**
+
+
+
+
+
+## Addressing data in memory
+
+
+
+> The process through which the processor controls the execution of instructions is referred to as the **fetch-decode-execute cycle** or simply the **execution cycle**.
+
+**The execution cycle consists of three continuous steps:**
+
+1. Fetching the instruction from the memory.
+2. Decoding(identifying) the instruction.
+3. Executing the instruction.
+
+The processor may access one or more bytes of memory at a time.
+
+
+
+Assume a hexadecimal number, 0725H(_the H stands for Hexadecimal_). The number will require 2bytes of memory. The high order byte is 07 and low-order byte is 25.
+
+
+
+**The processor stores data in reverse-byte sequence, i.e, the low-order byte is stored in a low memory address and a high-order byte is stored in high memory address.**
+
+So, if the processor brings the value 0725H from register to memory, it will trasfer 25 first to the lower memory address and 07 to next memory address.
+
+
+
+The image below shows what was just said:
+
+
+
+<img src="https://github.com/C0DER11101/X86_64_ASSEMBLY/blob/X86_64_Linux/MemoryAddress.jpg" width="60%" height="30%">
+
+
+
+_When the processor gets numeric data from memory to register, it again reverses it._
+
+
+
+**There are two kinds of memory addresses:**
+
+1. Absolute address $\rightarrow$ direct reference of specific location.
+2. Segment address(or offset) $rightarrow$ starting address of a memory segment with the offset value.
